@@ -1,14 +1,27 @@
-# Project Logic And Code Map
+# GUI Map
 .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-# Form 1 - Tab Control : Guna2tabcontrol
-.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+# Form 1
+
+| Element | Name |
+| -------------------- | -------------------- |
+| Tab Control | Guna2tabcontrol |
+|  | [](  ) |
+|  | [](  ) |
+|  | [](  ) |
+|  | [](  ) |
+
 ## Tab 1 - General I nformation
 
-.<br>.<br>.<br>
+| Element | Name | Description | 
+| -------------------- | -------------------- | -------------------- |
+| Tab Control | Guna2tabcontrol2 |                    | --- |
+| Sub Tab1 | [machine_information_tab](  ) |          | --- |
+| Sub Tab2 | [bios_information_tab](  ) |             | --- |
+| Sub Tab3 | [os_information_tab](  ) |               | --- |
+| Sub Tab4 | [user_information_tab](  ) |             | --- |
+| Sub Tab5 | [reporting_tab](  ) |                    | --- |
 
-It have  Tab Control : Guna2tabcontrol2
-
-.<br>.<br>.<br>
+<br>
 
 #### SubTab1 Machine Information : machine_information_tab
 + Panel : machin_information_panel
