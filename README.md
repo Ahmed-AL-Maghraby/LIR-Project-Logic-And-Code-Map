@@ -71,16 +71,18 @@ Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
     - Description : Store Virustotal Api
     
   + Button : refresh_process_button
-     - Click Event : 
+     - Click Event : [ProcessAction.remove_Process()]( ) <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [RuningProcessInfo.GetProcessesInfo()]( )
 
   + Button : run_anti_scan
-     - Click Event : [ProcessAction.remove_Process()]( ) <br>
-     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [RuningProcessInfo.GetProcessesInfo()]( )
+     - Click Event : [VirustotalScaner.removeHash()]( )
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [VirustotalScaner.RunScan()]( )
      
   + Button : export_process_report
-     - Click Event : 
+     - Click Event : [ExportReports.ExportRuningProcessReport()]( )
 
-
++ Data Grid View : processTable1
+  - It contains 9 columns to show (Name - PID -Parent PID - Start Time - Instance - Image Path - User Account - Hash - Virustotal Score)
 
 
 
