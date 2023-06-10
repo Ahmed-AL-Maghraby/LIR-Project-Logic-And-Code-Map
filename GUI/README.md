@@ -13,6 +13,8 @@
 
 ## Tab 1 - General Information
 
+Description : Displays machine, user, capabilities, and network information
+
 | Element | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
 | Tab Control | Guna2tabcontrol2 |                    | --- |
@@ -25,6 +27,9 @@
 <br>
 
 #### SubTab1 Machine Information : machine_information_tab
+
+Description : Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information
+
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
   - Label : machine_name_result.Text = [Environment.MachineName]( )
@@ -40,10 +45,16 @@
 
 
 #### Sub Tab2 Bios Information : bios_information_tab
+
+Description : Displays bios information such as version and type
+
 + Table Layout : bios_information_table
   - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()]( )
   - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()]( )
 #### Sub Tab3 OS Information : os_information_tab
+
+Description : Displays information about OS as Operating System, Product Name, Os Build, Install Date
+
 + Table Layout : os_information_table
   - Label : operating_system_result.Text = [OS_Information.Get_Operating_System_And_Version()]( )
   - Label : operating_system_bitness_result.Text = [OS_Information.Get_Operating_System_Bitness()]( )
@@ -54,6 +65,9 @@
   - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()]( )
 
 #### Sub Tab4 User Information : user_information_tab
+
+Description : Displays information User as Register Owener, Domain, Logged in user
+
 + Table Layout : user_information_table
   - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()]( )
   - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()]( )
@@ -61,6 +75,9 @@
   - Label : logged_in_user_result.Text = [Environment.UserName]( )
 
 #### Sub Tab5 Reporting : reporting_tab
+
+Description : Export Report
+
 Description : " -- "
 + Button : machine_reporting_button
 + Button : bios_reporting_button
@@ -71,7 +88,7 @@ Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
 
 
 ## Tab 2 - Running Process : running_processes_tab
-
+Description : Displays information about the running processes and their detection in the virustotal
 + Panel : panel2
   + TextBox : SearchBox1
     - Event : [ProcessAction.SearchByName()]( )
@@ -102,7 +119,7 @@ Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
 
 ## Tab 3 - Network Connections : network_connections_tab
 
-Description : " -- "
+Description :  Displays information about connections being made and detected in VirusTotal and AbuseIPDB_Api 
 
 + Panel : network_tab_up_panal
   + TextBox : SearchBox4
