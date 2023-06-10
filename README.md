@@ -19,3 +19,17 @@ it have 4 tabs
   - Label : hard_disk_result.Text = [Machine_Information.Get_Disk_Information()]( )
 
 
+#### Tab2 Bios Information : bios_information_tab
++ Table Layout : bios_information_table
+  - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()]( )
+  - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()]( )
+
+
+
+
+
+
+
+
+
+
