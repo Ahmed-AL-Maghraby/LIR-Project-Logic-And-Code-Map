@@ -75,14 +75,14 @@ Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [RuningProcessInfo.GetProcessesInfo()]( )
 
   + Button : run_anti_scan
-     - Click Event : [VirustotalScaner.removeHash()]( )
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [VirustotalScaner.RunScan()]( )
+     - Click Event : [VirustotalScaner.removeHash()]( ) <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [VirustotalScaner.RunScan()]( )
      
   + Button : export_process_report
      - Click Event : [ExportReports.ExportRuningProcessReport()]( )
 
 + Data Grid View : processTable1
-  - It contains 9 columns to show (Name - PID -Parent PID - Start Time - Instance - Image Path - User Account - Hash - Virustotal Score)
+  - It contains 9 columns to show ( Name - PID -Parent PID - Start Time - Instance - Image Path - User Account - Hash - Virustotal Score )
 
 
 
