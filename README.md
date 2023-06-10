@@ -10,7 +10,7 @@ It have  Tab Control : Guna2tabcontrol2
 
 .<br>.<br>.<br>
 
-#### Tab1 Machine Information : machine_information_tab
+#### SubTab1 Machine Information : machine_information_tab
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
   - Label : machine_name_result.Text = [Environment.MachineName]( )
@@ -25,11 +25,11 @@ It have  Tab Control : Guna2tabcontrol2
   - Label : hard_disk_result.Text = [Machine_Information.Get_Disk_Information()]( )
 
 
-#### Tab2 Bios Information : bios_information_tab
+#### Sub Tab2 Bios Information : bios_information_tab
 + Table Layout : bios_information_table
   - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()]( )
   - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()]( )
-#### Tab3 OS Information : os_information_tab
+#### Sub Tab3 OS Information : os_information_tab
 + Table Layout : os_information_table
   - Label : operating_system_result.Text = [OS_Information.Get_Operating_System_And_Version()]( )
   - Label : operating_system_bitness_result.Text = [OS_Information.Get_Operating_System_Bitness()]( )
@@ -39,14 +39,14 @@ It have  Tab Control : Guna2tabcontrol2
   - Label : system_directory_result.Text = [Environment.SystemDirectory]( )
   - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()]( )
 
-#### Tab4 User Information : user_information_tab
+#### Sub Tab4 User Information : user_information_tab
 + Table Layout : user_information_table
   - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()]( )
   - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()]( )
   - Label : domain_result.Text = [Environment.UserDomainName]( )
   - Label : logged_in_user_result.Text = [Environment.UserName]( )
 
-#### Tab4 Reporting : reporting_tab
+#### Sub Tab5 Reporting : reporting_tab
 Description : " -- "
 + Button : machine_reporting_button
 + Button : bios_reporting_button
