@@ -2,7 +2,7 @@
 
 
 
-| Name | Access Type | Objects | Inhert From | Number Of Function |
+| Name | Access Type | Objects | inherit From | Number Of Function |
 | ---- | ----------- | ------- | ----------- | ------------------ |
 | ---- | ----------- | ------- | none | 0 |
 
