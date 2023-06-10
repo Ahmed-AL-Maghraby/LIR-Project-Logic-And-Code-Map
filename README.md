@@ -3,7 +3,13 @@
 # Form 1 - Tab Control : Guna2tabcontrol
 it have 4 tabs
 ## Tab 1 - General I nformation
+
+.<br>.<br>.<br>
+
 ### Tab Control : Guna2tabcontrol2
+
+.<br>.<br>.<br>
+
 #### Tab1 Machine Information : machine_information_tab
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
@@ -48,6 +54,35 @@ Description : " -- "
 + Button : user_reporting_button
 + Button : all_general_reporting_button <br>
 Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
+
+
+## Tab 2 - General I nformation : running_processes_tab
+
++ Panel : panel2
+  + TextBox : SearchBox1
+    - Event : [ProcessAction.SearchByName()]( )
+  + TextBox : SearchBox2
+    - Event : [ProcessAction.SearchById()]( )
+
+  + TextBox : SearchBox3
+    - Event : [ProcessAction.SearchByParentId()]( )
+
+  + TextBox : vir_api
+    - Description : Store Virustotal Api
+    
+  + Button : refresh_process_button
+     - Click Event : 
+
+  + Button : run_anti_scan
+     - Click Event : [ProcessAction.remove_Process()]( ) <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [RuningProcessInfo.GetProcessesInfo()]( )
+     
+  + Button : export_process_report
+     - Click Event : 
+
+
+
+
 
 
 
