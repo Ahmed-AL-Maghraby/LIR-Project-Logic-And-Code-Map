@@ -1,12 +1,12 @@
 # Project Logic And Code Map
 .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
 # Form 1 - Tab Control : Guna2tabcontrol
-it have 4 tabs
+.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
 ## Tab 1 - General I nformation
 
 .<br>.<br>.<br>
 
-### Tab Control : Guna2tabcontrol2
+It have  Tab Control : Guna2tabcontrol2
 
 .<br>.<br>.<br>
 
@@ -56,7 +56,7 @@ Description : " -- "
 Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
 
 
-## Tab 2 - General I nformation : running_processes_tab
+## Tab 2 - Running Process : running_processes_tab
 
 + Panel : panel2
   + TextBox : SearchBox1
