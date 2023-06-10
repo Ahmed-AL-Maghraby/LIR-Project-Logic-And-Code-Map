@@ -15,11 +15,11 @@
 | Element | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
 | Tab Control | Guna2tabcontrol2 |                    | --- |
-| Sub Tab1 | [machine_information_tab](  ) |          | --- |
-| Sub Tab2 | [bios_information_tab](  ) |             | --- |
-| Sub Tab3 | [os_information_tab](  ) |               | --- |
-| Sub Tab4 | [user_information_tab](  ) |             | --- |
-| Sub Tab5 | [reporting_tab](  ) |                    | --- |
+| Sub Tab1 | [machine_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#subtab1-machine-information--machine_information_tab ) |          | --- |
+| Sub Tab2 | [bios_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab2-bios-information--bios_information_tab ) |             | --- |
+| Sub Tab3 | [os_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab3-os-information--os_information_tab ) |               | --- |
+| Sub Tab4 | [user_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab4-user-information--user_information_tab ) |             | --- |
+| Sub Tab5 | [reporting_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab5-reporting--reporting_tab ) |                    | --- |
 
 <br>
 
