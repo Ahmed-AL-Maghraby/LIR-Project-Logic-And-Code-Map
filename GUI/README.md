@@ -2,15 +2,16 @@
 .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
 # Form 1
 
-| Element | Name |
-| -------------------- | -------------------- |
-| Tab Control | Guna2tabcontrol |
-|  | [](  ) |
-|  | [](  ) |
-|  | [](  ) |
-|  | [](  ) |
+| Element | Name | Description | 
+| -------------------- | -------------------- | -------------------- |
+| Tab Control | Guna2tabcontrol2 |                    | --- |
+| General I nformation | [general_information_tab](  ) |                    | --- |
+|  | [](  ) |                    | --- |
+|  | [](  ) |                    | --- |
+|  | [](  ) |                    | --- |
 
-## Tab 1 - General I nformation
+
+## Tab 1 - General Information
 
 | Element | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
