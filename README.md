@@ -99,8 +99,11 @@ Description : " -- "
     - Event : [ConnectionsAction.SearchByProcessName()]( ) 
   + TextBox : AbuseIPDB_Api
     - Description : Store AbuseIPDB Api
-  + Button :
-
+  + Button : export_connection_report
+    - Click Event : [ExportReports.ExportConnectionReport()]( )
+  + Button : refresh_connection_result
+    - Click Event : [ConnectionsAction.remove_connection()]( ) <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [Network_Connections.GetNetworkConnections()]( )
 
 
 + Data Grid View : Networktable
