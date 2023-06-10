@@ -23,6 +23,37 @@ it have 4 tabs
 + Table Layout : bios_information_table
   - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()]( )
   - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()]( )
+#### Tab3 OS Information : os_information_tab
++ Table Layout : os_information_table
+  - Label : operating_system_result.Text = [OS_Information.Get_Operating_System_And_Version()]( )
+  - Label : operating_system_bitness_result.Text = [OS_Information.Get_Operating_System_Bitness()]( )
+  - Label : product_name_result.Text = [OS_Information.Get_Product_Name()]( )
+  - Label : product_id_result.Text = [OS_Information.Get_Product_ID()]( )
+  - Label : os_build_result.Text = [OS_Information.Get_OS_Buil_dNumber()]( )
+  - Label : system_directory_result.Text = [Environment.SystemDirectory]( )
+  - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()]( )
+
+#### Tab4 User Information : user_information_tab
++ Table Layout : user_information_table
+  - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()]( )
+  - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()]( )
+  - Label : domain_result.Text = [Environment.UserDomainName]( )
+  - Label : logged_in_user_result.Text = [Environment.UserName]( )
+
+#### Tab4 Reporting : reporting_tab
+Description : " -- "
++ Button : machine_reporting_button
++ Button : bios_reporting_button
++ Button : os_reporting_button
++ Button : user_reporting_button
++ Button : all_general_reporting_button
+Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
+
+
+
+
+
+
 
 
 
