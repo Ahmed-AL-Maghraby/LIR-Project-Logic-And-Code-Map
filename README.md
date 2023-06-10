@@ -10,7 +10,7 @@ It have  Tab Control : Guna2tabcontrol2
 
 .<br>.<br>.<br>
 
-#### => SubTab1 Machine Information : machine_information_tab
+#### SubTab1 Machine Information : machine_information_tab
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
   - Label : machine_name_result.Text = [Environment.MachineName]( )
@@ -83,6 +83,38 @@ Click Event : [ExportReports.ConvertTableLayoutPanelToPdf()]( )
 
 + Data Grid View : processTable1
   - It contains 9 columns to show ( Name - PID -Parent PID - Start Time - Instance - Image Path - User Account - Hash - Virustotal Score )
+
+
+
+## Tab 3 - Network Connections : network_connections_tab
+
+Description : " -- "
+
++ Panel : network_tab_up_panal
+  + TextBox : SearchBox4
+    - Event : [ConnectionsAction.SearchByIP()]( ) 
+  + TextBox : SearchBox5
+    - Event : [ConnectionsAction.SearchByPID()]( ) 
+  + TextBox : SearchBox6
+    - Event : [ConnectionsAction.SearchByProcessName()]( ) 
+  + TextBox : AbuseIPDB_Api
+    - Description : Store AbuseIPDB Api
+  + Button :
+
+
+
++ Data Grid View : Networktable
+  - It contains 12 columns to show ( Protocol - Local Address - Out Port - Foreign Adress - Connection Port - Connection State - PID - Process Name - Host Name - IP Country - AbuseIPDB Score - VirusTotal Score )
+
+
+
+
+
+
+
+
+
+
 
 
 
