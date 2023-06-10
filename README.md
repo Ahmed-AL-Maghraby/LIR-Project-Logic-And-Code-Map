@@ -10,7 +10,7 @@ It have  Tab Control : Guna2tabcontrol2
 
 .<br>.<br>.<br>
 
-#### SubTab1 Machine Information : machine_information_tab
+#### => SubTab1 Machine Information : machine_information_tab
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
   - Label : machine_name_result.Text = [Environment.MachineName]( )
