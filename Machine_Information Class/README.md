@@ -16,12 +16,12 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [Get_Processor_Identification]() | Static - String | Public | Retrieve information about the processor, including its name and clock speed |
-| [Get_Primary_Adapter_Mac]() | Static - String | Public |  Retrieve the MAC (Media Access Control) address of the primary network adapter |
-| [Get_System_Uptime]() | Static - String | Public | Retrieve the system uptime, which represents the duration for which the system has been running since the last boot |
-| [Get_Installed_RAM]() | Static - String | Public | retrieve the installed RAM (Random Access Memory) of the computer |
-| [Get_Disk_Information]() | Static - String | Public |  Retrieve the disk information of the computer, including the model and size of each disk drive |
-| [Get_Device_ID]() | Static - String | Public | Retrieve the device ID of the compute |
+| [Get_Processor_Identification](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_processor_identification) | Static - String | Public | Retrieve information about the processor, including its name and clock speed |
+| [Get_Primary_Adapter_Mac](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_primary_adapter_mac) | Static - String | Public |  Retrieve the MAC (Media Access Control) address of the primary network adapter |
+| [Get_System_Uptime](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_system_uptime) | Static - String | Public | Retrieve the system uptime, which represents the duration for which the system has been running since the last boot |
+| [Get_Installed_RAM](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_installed_ram) | Static - String | Public | retrieve the installed RAM (Random Access Memory) of the computer |
+| [Get_Disk_Information](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_disk_information) | Static - String | Public |  Retrieve the disk information of the computer, including the model and size of each disk drive |
+| [Get_Device_ID](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_device_id) | Static - String | Public | Retrieve the device ID of the compute |
 	
 
 <br>
