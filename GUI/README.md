@@ -2,9 +2,9 @@
 The GUI Consists of two Forms as shown below :
 | Form Name | Description |
 | --------- | ----------- |
-| [Form 1]() | ---------- |
-| [Form 2]() | ---------- | 
-| [Form 3]() | ---------- | 
+| [Form 1](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#form-1) | ---------- |
+| [Form 2](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#form-2) | ---------- | 
+| [Form 3](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#form-3) | ---------- | 
 
 <br> 
 
