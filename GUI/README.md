@@ -69,8 +69,8 @@ Description : Displays information about OS as Operating System, Product Name, O
 Description : Displays information User as Register Owener, Domain, Logged in user
 
 + Table Layout : user_information_table
-  - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()]( )
-  - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()]( )
+  - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_owner)
+  - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_organization)
   - Label : domain_result.Text = [Environment.UserDomainName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.userdomainname?view=net-7.0)
   - Label : logged_in_user_result.Text = [Environment.UserName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.username?view=net-7.0)
 
