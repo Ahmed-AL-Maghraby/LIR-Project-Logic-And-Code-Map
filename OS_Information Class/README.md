@@ -9,13 +9,14 @@
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
 | [Get_Operating_System_And_Version]() | Static - String | Public |  Retrieve the operating system name and version information. |
-| [Get_Operating_System_Bitness]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Get_Operating_System_Bitness]() | Static - String | Public |  Determine the bitness (32-bit or 64-bit) of the operating system. |
 | [Get_Product_Name]() | Static - String | Public | wwwwwwwwwwwwwwww |
 | [Get_OS_Buil_dNumber]() | Static - String | Public | wwwwwwwwwwwwwwww |
 | [Get_Product_ID]() | Static - String | Public | wwwwwwwwwwwwwwww |
 | [Get_OS_Install_Date]() | Static - String | Public | wwwwwwwwwwwwwwww |
 
 
+<br>
 
 ## Get_Operating_System_And_Version
 
@@ -118,16 +119,58 @@ Here's how the function works:
 21. Finally, it returns the formatted string.
 
 
+<br/>
+
+## Get_Operating_System_Bitness
+
+The object of this function is to determine and return the bitness of the operating system as a string.
+
+```c#
+
+public static string Get_Operating_System_Bitness()
+        {
+            return Environment.Is64BitOperatingSystem ? "64-bit" : "32-bit";
+        }
+
+```
+
+Here's how the function works:
+
+1. It uses the `Environment.Is64BitOperatingSystem` property, which returns `true` if the operating system is 64-bit and `false` if it is 32-bit.
+2. It uses a ternary operator (`? :`) to return the string "64-bit" if `Environment.Is64BitOperatingSystem` is `true`, and "32-bit" if it is `false`.
 
 
-### Get_Operating_System_Bitness
-
-
-### Get_Product_Name
+## Get_Product_Name
 
 
 
-### Get_OS_Buil_dNumber
+## Get_OS_Buil_dNumber
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
