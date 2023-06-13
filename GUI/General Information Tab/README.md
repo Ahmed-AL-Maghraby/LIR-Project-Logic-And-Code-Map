@@ -4,9 +4,9 @@
 
 Description : Displays machine, user, capabilities, and network information
 
-| Element | Name |
-| -------------------- | -------------------- |
-| Tab Control | Guna2tabcontrol2 |
+| Element | Display Name | Name |
+| -------------------- | ----- |-------------------- |
+| Tab Control | General Information | Guna2tabcontrol2 |
 
 | Tab Display Name | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
