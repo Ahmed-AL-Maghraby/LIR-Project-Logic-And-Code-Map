@@ -269,7 +269,7 @@ Here's how the function works:
 
 <br>
 
-### Get_OS_Install_Date
+## Get_OS_Install_Date
 
 The object of this function is to retrieve and return the installation date of the operating system by accessing the Windows Registry. If the installation date cannot be retrieved, it returns a default value of the minimum `DateTime` value formatted as "yyyy-MM-dd"
 
