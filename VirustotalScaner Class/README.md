@@ -11,7 +11,7 @@
 
 | Name | Access Modifiers | Number Of Classes |
 | ---------------- | ----------- | ------------------ |
-| [Api GetData Classes](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/edit/main/VirustotalScaner%20Class/README.md#api-getdata-classes) |      Plublic    |        4           |
+| [Api GetData Classes](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/edit/VirustotalScaner%20Class/README.md#api-getdata-classes) |      Plublic    |        4           |
 
 ## Global Varuable
 
