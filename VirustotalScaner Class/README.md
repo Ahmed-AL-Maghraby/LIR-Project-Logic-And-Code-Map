@@ -68,14 +68,16 @@ public static void RunScan()
 
 
 
-
-
-
 <br>
 
 ## removeHash
 
 ```c#
+
+public static void removeHash()
+        {
+            hashs = "";
+        }
 
 ```
 
@@ -88,7 +90,11 @@ public static void RunScan()
 ## GetIpScanResult
 
 ```c#
-
+public static string GetIpScanResult(string ip)
+        {
+            Scanner(ip, myform.vir_api.Text);
+            return scanresult;
+        }
 ```
 
 
@@ -104,6 +110,32 @@ public static void RunScan()
 
 ```c#
 
+public static string GetReultScan(string pro_hash, string apik)
+        {
+           
+            
+            string result = "";
+            if (pro_hash.Length > 10)
+            {
+                
+                if(!hashs.Contains(pro_hash))
+                {
+                        
+                    Scanner(pro_hash, apik);
+                    result = scanresult;
+                    hashs += pro_hash + result + " ";
+                }
+                else
+                {
+                    result = hashs.Substring(hashs.IndexOf(pro_hash) + 32 ,18);
+                }
+                
+
+            }
+            return result;
+        }
+
+
 ```
 
 
@@ -118,7 +150,38 @@ public static void RunScan()
 ## Scanner
 
 ```c#
+public static void Scanner(string pro_hash, string apik)
+        {
+            string apiKey = apik;
+            string hashValue = pro_hash;
+            string url = $"https://www.virustotal.com/api/v3/files/{hashValue}";
 
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("x-apikey", apiKey);
+
+                HttpResponseMessage response = client.GetAsync(url).GetAwaiter().GetResult();
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseContent = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    var data = JsonConvert.DeserializeObject<ApiResponse>(responseContent);
+                    if (data.data != null)
+                    {
+                        var attributes = data.data.attributes;
+                        scanresult = ($"Detections by : {attributes.last_analysis_stats.malicious}");
+
+                    }
+                    else
+                    {
+                        scanresult = ("No information available for the hash.");
+                    }
+                }
+                else
+                {
+                   scanresult = ("Some Error in api");
+                }
+            }
+        }
 ```
 
 
