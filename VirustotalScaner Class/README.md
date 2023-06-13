@@ -15,9 +15,9 @@
 
 ## Global Varuable
 
-| Name | Access Modifiers | Description |
-| -- | -- | -- |
-| scanresult | static-string | wwwww |
+| Name | Access Modifiers | Type | Description |
+| -- | -- | -- | -- |
+| scanresult | Private |static-string | wwwww |
 
 ## Methods
 
