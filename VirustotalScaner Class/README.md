@@ -7,13 +7,17 @@
 | VirustotalScaner |      Plublic     | myform from Form1 |    none     |        0           |
 
 
-## Help Class
+## Help Classes
 
-| Name | Access Modifiers | Number Of Function |
-| ---- | ---------------- | ----------- | ------------------ |
-| Api GetData Clasess |      Plublic    |        4           |
+| Name | Access Modifiers | Number Of Classes |
+| ---------------- | ----------- | ------------------ |
+| [Api GetData Classes](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/edit/main/VirustotalScaner%20Class/README.md#api-getdata-classes) |      Plublic    |        4           |
 
+## Global Varuable
 
+| Name | Access Modifiers | Description |
+| -- | -- | -- |
+| scanresult | static-string | wwwww |
 
 ## Methods
 
@@ -39,7 +43,7 @@
 
 <br>
 
-## Api GetData Clasess
+## Api GetData Classes
 
 ```c#
 public class ApiResponse
