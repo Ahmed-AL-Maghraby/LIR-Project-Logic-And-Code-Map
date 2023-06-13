@@ -1,5 +1,7 @@
 
 
+
+
 # Tab 1 - General Information
 
 Description : Displays machine, user, capabilities, and network information
