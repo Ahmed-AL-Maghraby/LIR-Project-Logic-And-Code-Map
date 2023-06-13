@@ -32,10 +32,10 @@ Description : Displays information about machine as Host Name, System, Date, Tim
 
 + Panel : machin_information_panel
 + Table Layout : machine_information_table
-  - Label : machine_name_result.Text = [Environment.MachineName]( )
-  - Label : host_name_result.Text = [Dns.GetHostName()]( )
-  - Label : system_date_result.Text = [DateTime.Now.ToString()]( )
-  - Label : time_zone_standerd_result.Text = [TimeZoneInfo.Local.ToString()]( )
+  - Label : machine_name_result.Text = [Environment.MachineName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.machinename?view=net-7.0)
+  - Label : host_name_result.Text = [Dns.GetHostName()](https://learn.microsoft.com/en-us/dotnet/api/system.net.dns.gethostname?view=net-7.0)
+  - Label : system_date_result.Text = [DateTime.Now.ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-7.0)
+  - Label : time_zone_standerd_result.Text = [TimeZoneInfo.Local.ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.timezoneinfo.tostring?view=net-8.0)
   - Label : processor_identification_result.Text = [Machine_Information.Get_Processor_Identification()]( )
   - Label : primary_network_adabter_mac_result.Text = [Machine_Information.Get_Primary_Adapter_Mac()]( )
   - Label : uptime_result.Text = [Machine_Information.Get_System_Uptime()]( )
@@ -56,13 +56,13 @@ Description : Displays bios information such as version and type
 Description : Displays information about OS as Operating System, Product Name, Os Build, Install Date
 
 + Table Layout : os_information_table
-  - Label : operating_system_result.Text = [OS_Information.Get_Operating_System_And_Version()]( )
-  - Label : operating_system_bitness_result.Text = [OS_Information.Get_Operating_System_Bitness()]( )
-  - Label : product_name_result.Text = [OS_Information.Get_Product_Name()]( )
-  - Label : product_id_result.Text = [OS_Information.Get_Product_ID()]( )
-  - Label : os_build_result.Text = [OS_Information.Get_OS_Buil_dNumber()]( )
-  - Label : system_directory_result.Text = [Environment.SystemDirectory]( )
-  - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()]( )
+  - Label : operating_system_result.Text = [OS_Information.Get_Operating_System_And_Version()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_operating_system_and_version)
+  - Label : operating_system_bitness_result.Text = [OS_Information.Get_Operating_System_Bitness()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_operating_system_bitness)
+  - Label : product_name_result.Text = [OS_Information.Get_Product_Name()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_product_name)
+  - Label : product_id_result.Text = [OS_Information.Get_Product_ID()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_product_id)
+  - Label : os_build_result.Text = [OS_Information.Get_OS_Buil_dNumber()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_os_buil_dnumber)
+  - Label : system_directory_result.Text = [Environment.SystemDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.environment.systemdirectory?view=net-7.0)
+  - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_os_install_date)
 
 #### Sub Tab4 User Information : user_information_tab
 
@@ -71,8 +71,8 @@ Description : Displays information User as Register Owener, Domain, Logged in us
 + Table Layout : user_information_table
   - Label : register_owener_result.Text = [User_Information.Get_Registered_Owner()]( )
   - Label : registered_organisations_result.Text = [User_Information.Get_Registered_Organization()]( )
-  - Label : domain_result.Text = [Environment.UserDomainName]( )
-  - Label : logged_in_user_result.Text = [Environment.UserName]( )
+  - Label : domain_result.Text = [Environment.UserDomainName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.userdomainname?view=net-7.0)
+  - Label : logged_in_user_result.Text = [Environment.UserName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.username?view=net-7.0)
 
 #### Sub Tab5 Reporting : reporting_tab
 
