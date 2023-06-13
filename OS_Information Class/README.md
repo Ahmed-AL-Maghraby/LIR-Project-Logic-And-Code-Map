@@ -8,12 +8,12 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [Get_Operating_System_And_Version]() | Static - String | Public |  Retrieve the operating system name and version information |
-| [Get_Operating_System_Bitness]() | Static - String | Public |  Determine the bitness (32-bit or 64-bit) of the operating system |
-| [Get_Product_Name]() | Static - String | Public | Retrieve the product name of the operating system or software |
-| [Get_OS_Buil_dNumber]() | Static - String | Public | Retrieve the build number of the operating system |
-| [Get_Product_ID]() | Static - String | Public | Retrieve the product ID of the operating system |
-| [Get_OS_Install_Date]() | Static - String | Public | Retrieve the installation date of the operating system |
+| [Get_Operating_System_And_Version](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_operating_system_and_version) | Static - String | Public |  Retrieve the operating system name and version information |
+| [Get_Operating_System_Bitness](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_operating_system_bitness) | Static - String | Public |  Determine the bitness (32-bit or 64-bit) of the operating system |
+| [Get_Product_Name](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_product_name) | Static - String | Public | Retrieve the product name of the operating system or software |
+| [Get_OS_Buil_dNumber](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_os_buil_dnumber) | Static - String | Public | Retrieve the build number of the operating system |
+| [Get_Product_ID](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_product_id) | Static - String | Public | Retrieve the product ID of the operating system |
+| [Get_OS_Install_Date](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_os_install_date) | Static - String | Public | Retrieve the installation date of the operating system |
 
 
 <br>
