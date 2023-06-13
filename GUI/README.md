@@ -2,8 +2,9 @@
 The GUI Consists of two Forms as shown below :
 | Form Name | Description |
 | --------- | ----------- |
-| Form 1 | ---------- |
-| Form 2 | ---------- | 
+| [Form 1]() | ---------- |
+| [Form 2]() | ---------- | 
+| [Form 3]() | ---------- | 
 
 <br> 
 
@@ -21,7 +22,7 @@ It has one Tab Control with name ``Guna2tabcontrol``
 
 <br>
 
-# Form 1
+# Form 2
 It Has No Thing
 
 
@@ -29,6 +30,11 @@ It Has No Thing
 
 
 
+
+<br>
+
+# Form 3
+It Has No Thing
 
 
 
