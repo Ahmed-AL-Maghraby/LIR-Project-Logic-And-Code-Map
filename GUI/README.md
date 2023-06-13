@@ -1,18 +1,28 @@
 # GUI Map
+The GUI Consists of two Forms as shown below :
+| Form Name | Description |
+| --------- | ----------- |
+| Form 1 | ---------- |
+| Form 2 | ---------- | 
+
+<br> 
 
 # Form 1
+
+It has one Tab Control with name ``Guna2tabcontrol``
+
 | Element | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
-| Tab Control | Guna2tabcontrol |                    | --- |
-| General I nformation | [general_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#tab-1---general-information ) | Displays machine, user, capabilities, and network information |
-| Running Process | [running_processes_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#tab-2---running-process--running_processes_tab ) | Displays information about the running processes and their detection in the virustotal |
-| Network Connections | [network_connections_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI#tab-3---network-connections--network_connections_tab ) | Displays information about connections being made and detected in VirusTotal and AbuseIPDB_Api |
+| General I nformation | [general_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab) | Displays machine, user, capabilities, and network information |
+| Running Process | [running_processes_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/Running%20Processes%20Tab) | Displays information about the running processes and their detection in the virustotal |
+| Network Connections | [network_connections_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/Network%20Connections%20Tab) | Displays information about connections being made and detected in VirusTotal and AbuseIPDB_Api |
 |  | [](  ) |                    | --- |
 
 
+<br>
 
-
-
+# Form 1
+It Has No Thing
 
 
 
