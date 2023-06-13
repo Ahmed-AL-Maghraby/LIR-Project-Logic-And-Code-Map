@@ -7,11 +7,11 @@ Description : Displays machine, user, capabilities, and network information
 | Element | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
 | Tab Control | Guna2tabcontrol2 |                    | --- |
-| Sub Tab1 | [machine_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#subtab1-machine-information--machine_information_tab ) |   Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information |
-| Sub Tab2 | [bios_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab2-bios-information--bios_information_tab ) |   Displays bios information such as version and type |
-| Sub Tab3 | [os_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab3-os-information--os_information_tab ) |    Displays information about OS as   Operating System, Product Name, Os Build, Install Date |
-| Sub Tab4 | [user_information_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab4-user-information--user_information_tab ) |   Displays information User as Register Owener, Domain, Logged in user |
-| Sub Tab5 | [reporting_tab]( https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/GUI/README.md#sub-tab5-reporting--reporting_tab ) |  Export Report |
+| Machine Information Tab | [machine_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#machine-information-tab--machine_information_tab) |   Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information |
+| Bios Information Tab | [bios_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#bios-information-tab--bios_information_tab) |   Displays bios information such as version and type |
+| OS Information Tab | [os_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#os-information-tab--os_information_tab) |    Displays information about OS as   Operating System, Product Name, Os Build, Install Date |
+| User Information Tab | [user_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#user-information-tab--user_information_tab) |   Displays information User as Register Owener, Domain, Logged in user |
+| Reporting Tab | [reporting_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#reporting-tab--reporting_tab) |  Export Report |
 
 <br>
 
