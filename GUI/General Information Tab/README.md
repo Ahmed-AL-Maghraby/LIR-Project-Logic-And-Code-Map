@@ -15,7 +15,7 @@ Description : Displays machine, user, capabilities, and network information
 
 <br>
 
-## SubTab1 Machine Information : machine_information_tab
+## Machine Information Tab : machine_information_tab
 
 Description : Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information
 
@@ -33,14 +33,14 @@ Description : Displays information about machine as Host Name, System, Date, Tim
   - Label : hard_disk_result.Text = [Machine_Information.Get_Disk_Information()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_disk_information)
 
 
-## Sub Tab2 Bios Information : bios_information_tab
+## Bios Information Tab : bios_information_tab
 
 Description : Displays bios information such as version and type
 
 + Table Layout : bios_information_table
   - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_date)
   - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_version)
-## Sub Tab3 OS Information : os_information_tab
+## OS Information Tab : os_information_tab
 
 Description : Displays information about OS as Operating System, Product Name, Os Build, Install Date
 
@@ -53,7 +53,7 @@ Description : Displays information about OS as Operating System, Product Name, O
   - Label : system_directory_result.Text = [Environment.SystemDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.environment.systemdirectory?view=net-7.0)
   - Label : install_date_result.Text = [OS_Information.Get_OS_Install_Date()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/OS_Information%20Class#get_os_install_date)
 
-## Sub Tab4 User Information : user_information_tab
+## User Information Tab : user_information_tab
 
 Description : Displays information User as Register Owener, Domain, Logged in user
 
@@ -63,7 +63,7 @@ Description : Displays information User as Register Owener, Domain, Logged in us
   - Label : domain_result.Text = [Environment.UserDomainName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.userdomainname?view=net-7.0)
   - Label : logged_in_user_result.Text = [Environment.UserName](https://learn.microsoft.com/en-us/dotnet/api/system.environment.username?view=net-7.0)
 
-## Sub Tab5 Reporting : reporting_tab
+## Reporting Tab : reporting_tab
 
 Description : Export Report
 
