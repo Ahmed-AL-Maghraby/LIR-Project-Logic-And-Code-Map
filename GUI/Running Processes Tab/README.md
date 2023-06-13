@@ -20,8 +20,8 @@ Description : Displays information about the running processes and their detecti
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [RuningProcessInfo.GetProcessesInfo()]( )
 
   + Button : run_anti_scan
-     - Click Event : [VirustotalScaner.removeHash()]( ) <br>
-     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [VirustotalScaner.RunScan()]( )
+     - Click Event : [VirustotalScaner.removeHash()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class) <br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [VirustotalScaner.RunScan()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class)
      
   + Button : export_process_report
      - Click Event : [ExportReports.ExportRuningProcessReport()]( )
