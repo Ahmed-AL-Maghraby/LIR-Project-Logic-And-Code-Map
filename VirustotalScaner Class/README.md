@@ -24,11 +24,11 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [RunScan]() | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
-| [removeHash]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetIpScanResult]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetReultScan]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Scanner]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [RunScan](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#runscan) | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
+| [removeHash](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#removehash) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetIpScanResult](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getipscanresult) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetReultScan](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getreultscan) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Scanner](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#scanner) | Static - String | Public | wwwwwwwwwwwwwwww |
 
 
 
