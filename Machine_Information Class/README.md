@@ -20,8 +20,8 @@
 | [Get_Primary_Adapter_Mac]() | Static - String | Public |  Retrieve the MAC (Media Access Control) address of the primary network adapter |
 | [Get_System_Uptime]() | Static - String | Public | Retrieve the system uptime, which represents the duration for which the system has been running since the last boot |
 | [Get_Installed_RAM]() | Static - String | Public | retrieve the installed RAM (Random Access Memory) of the computer |
-| [Get_Disk_Information]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Get_Device_ID]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Get_Disk_Information]() | Static - String | Public |  Retrieve the disk information of the computer, including the model and size of each disk drive |
+| [Get_Device_ID]() | Static - String | Public | Retrieve the device ID of the compute |
 	
 
 <br>
@@ -176,22 +176,93 @@ Here's how the function works:
 
 ## Get_Disk_Information
 
+The object of this function is to retrieve and return the disk information of the computer, including the model and size of each disk drive, formatted as a string.
+
+```c#
+public static string Get_Disk_Information()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Model, Size FROM Win32_DiskDrive");
+            ManagementObjectCollection collection = searcher.Get();
+
+            foreach (ManagementObject obj in collection)
+            {
+                string model = obj["Model"].ToString();
+                ulong sizeBytes = (ulong)obj["Size"];
+                int sizeGB = (int)(sizeBytes / (1024 * 1024 * 1024)); // Convert bytes to GB
+
+                sb.AppendLine("Model: " + model);
+                sb.AppendLine("Size: " + sizeGB + " GB\n");
+                sb.AppendLine();
+            }
+
+            return sb.ToString();
+        
+```
 
 
 
+Here's how the function works:
 
+1. It creates a new instance of the `StringBuilder` class named `sb` to efficiently build a string with disk information.
+2. It creates a new instance of the `ManagementObjectSearcher` class, specifying the query "SELECT Model, Size FROM Win32_DiskDrive". This query retrieves the model and size of each disk drive on the computer.
+3. It calls the `Get()` method on the `searcher` object to retrieve a collection of `ManagementObject` instances that match the query.
+4. It iterates over each `ManagementObject` in the `collection` using a `foreach` loop.
+5. Inside the loop, it retrieves the `Model` property of the `ManagementObject` as a string, representing the model name of the disk drive.
+6. It retrieves the `Size` property of the `ManagementObject` as a `ulong` (unsigned long) value, representing the size of the disk drive in bytes.
+7. It divides the `sizeBytes` value by the appropriate factor to convert it from bytes to gigabytes (GB). In this case, it divides by 1024 three times (1024 * 1024 * 1024).
+8. It converts the result to an `int` to represent the size of the disk drive in GB as a whole number.
+9. It appends the model and size information to the `StringBuilder` object `sb` using the `AppendLine()` method, formatting the strings with appropriate labels and line breaks.
+10. After the loop, it calls `ToString()` on the `sb` object to convert the accumulated disk information in the `StringBuilder` to a string.
+11. It returns the string representation of the disk information.
 
-
+So, 
 
 
 <br> 
 
 ## Get_Device_ID
 
+The object of this function is to retrieve and return the device ID of the computer
+
+```c#
+public static string Get_Device_ID()
+        {
+            string deviceID = string.Empty;
+
+            try
+            {
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_ComputerSystemProduct");
+                ManagementObjectCollection objects = searcher.Get();
+
+                foreach (ManagementObject obj in objects)
+                {
+                    deviceID = obj["UUID"]?.ToString();
+                    break;  // Assuming only one device ID is needed, exit loop after retrieving the first one
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error retrieving device ID: " + ex.Message);
+            }
+
+            return deviceID;
+        }
+```
 
 
+Here's how the function works:
 
-
+1. It initializes a string variable named `deviceID` with an empty string.
+2. It wraps the code in a try-catch block to handle any exceptions that may occur during the retrieval of the device ID.
+3. Inside the try block, it creates a new instance of the `ManagementObjectSearcher` class, specifying the query "SELECT * FROM Win32_ComputerSystemProduct". This query retrieves information about the computer system product, which includes the device ID.
+4. It calls the `Get()` method on the `searcher` object to retrieve a collection of `ManagementObject` instances that match the query.
+5. It iterates over each `ManagementObject` in the `objects` collection using a `foreach` loop.
+6. Inside the loop, it retrieves the value of the `UUID` property of the `ManagementObject` as a string and assigns it to the `deviceID` variable.
+7. It breaks out of the loop after retrieving the first device ID, assuming that only one device ID is needed.
+8. If an exception occurs during the retrieval of the device ID, the catch block is executed, and an error message is displayed on the console.
+9. It returns the device ID stored in the `deviceID` variable.
 
 
 
