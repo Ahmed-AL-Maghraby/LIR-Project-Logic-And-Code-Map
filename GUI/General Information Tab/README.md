@@ -44,7 +44,7 @@ Description : Displays bios information such as version and type
 
 + Table Layout : bios_information_table
   - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_date)
-  - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_version)
+  - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/BIOS_Information%20Class/README.md#get_bios_version)
 ## OS Information Tab : os_information_tab
 
 Description : Displays information about OS as Operating System, Product Name, Os Build, Install Date
