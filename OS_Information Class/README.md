@@ -8,12 +8,12 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [Get_Operating_System_And_Version]() | Static - String | Public |  Retrieve the operating system name and version information. |
-| [Get_Operating_System_Bitness]() | Static - String | Public |  Determine the bitness (32-bit or 64-bit) of the operating system. |
-| [Get_Product_Name]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Get_OS_Buil_dNumber]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Get_Product_ID]() | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Get_OS_Install_Date]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Get_Operating_System_And_Version]() | Static - String | Public |  Retrieve the operating system name and version information |
+| [Get_Operating_System_Bitness]() | Static - String | Public |  Determine the bitness (32-bit or 64-bit) of the operating system |
+| [Get_Product_Name]() | Static - String | Public | Retrieve the product name of the operating system or software |
+| [Get_OS_Buil_dNumber]() | Static - String | Public | Retrieve the build number of the operating system |
+| [Get_Product_ID]() | Static - String | Public | Retrieve the product ID of the operating system |
+| [Get_OS_Install_Date]() | Static - String | Public | Retrieve the installation date of the operating system |
 
 
 <br>
@@ -139,47 +139,183 @@ Here's how the function works:
 1. It uses the `Environment.Is64BitOperatingSystem` property, which returns `true` if the operating system is 64-bit and `false` if it is 32-bit.
 2. It uses a ternary operator (`? :`) to return the string "64-bit" if `Environment.Is64BitOperatingSystem` is `true`, and "32-bit" if it is `false`.
 
+<br>
 
 ## Get_Product_Name
 
+The object of this function is to retrieve and return the product name of the operating system or software by accessing the Windows Registry. If the product name cannot be retrieved, it returns a default value of "Unknown Product"
+ 
+```c#
 
+public static string Get_Product_Name()
+        {
+            const string keyPath = @"SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+            const string valueName = "ProductName";
+
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyPath))
+            {
+                if (key != null)
+                {
+                    string productName = key.GetValue(valueName)?.ToString();
+                    if (!string.IsNullOrEmpty(productName))
+                    {
+                        return productName;
+                    }
+                }
+            }
+
+            return "Unknown Product";
+        }
+```
+
+Here's how the function works:
+
+1. It defines two constant strings: `keyPath` and `valueName`. `keyPath` represents the registry key path where the product name is stored, and `valueName` represents the value name of the product name.
+2. It uses the `Registry.LocalMachine` property to get a reference to the local machine's registry hive.
+3. It calls the `OpenSubKey` method on the `Registry.LocalMachine` object with the `keyPath` to open the corresponding registry key.
+4. It wraps the code block inside a `using` statement to ensure that the `RegistryKey` object is properly disposed of after use.
+5. It checks if the `key` is not null, indicating that the key was successfully opened.
+6. Inside the `if` statement, it retrieves the value associated with `valueName` from the `key` using the `GetValue` method and converts it to a string.
+7. It checks if the `productName` is not null or empty.
+8. If the `productName` is available, it returns the `productName`.
+9. If the registry key or value was not found or if the `productName` is null or empty, it returns the string "Unknown Product".
+
+<br>
 
 ## Get_OS_Buil_dNumber
 
+The object of this function is to retrieve and return the build number of the operating system by accessing the Windows Registry. If the build number cannot be retrieved, it returns a default value of "Unknown Build Number"
+ 
+```c#
+
+public static string Get_OS_Buil_dNumber()
+        {
+            const string keyPath = @"SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+            const string valueName = "CurrentBuildNumber";
+
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyPath))
+            {
+                if (key != null)
+                {
+                    string buildNumber = key.GetValue(valueName)?.ToString();
+                    if (!string.IsNullOrEmpty(buildNumber))
+                    {
+                        return buildNumber;
+                    }
+                }
+            }
+
+            return "Unknown Build Number";
+        }
+
+```
 
 
+Here's how the function works:
+
+1. It defines two constant strings: `keyPath` and `valueName`. `keyPath` represents the registry key path where the build number is stored, and `valueName` represents the value name of the build number.
+2. It uses the `Registry.LocalMachine` property to get a reference to the local machine's registry hive.
+3. It calls the `OpenSubKey` method on the `Registry.LocalMachine` object with the `keyPath` to open the corresponding registry key.
+4. It wraps the code block inside a `using` statement to ensure that the `RegistryKey` object is properly disposed of after use.
+5. It checks if the `key` is not null, indicating that the key was successfully opened.
+6. Inside the `if` statement, it retrieves the value associated with `valueName` from the `key` using the `GetValue` method and converts it to a string.
+7. It checks if the `buildNumber` is not null or empty.
+8. If the `buildNumber` is available, it returns the `buildNumber`.
+9. If the registry key or value was not found or if the `buildNumber` is null or empty, it returns the string "Unknown Build Number".
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 
 ### Get_Product_ID
 
+The object of this function is to retrieve and return the product ID of the operating system by accessing the Windows Registry. If the product ID cannot be retrieved, it returns a default value of "Unknown Product ID"
+
+```c#
+
+public static string Get_Product_ID()
+        {
+            const string keyPath = @"SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+            const string valueName = "ProductId";
+
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyPath))
+            {
+                if (key != null)
+                {
+                    string productID = key.GetValue(valueName)?.ToString();
+                    if (!string.IsNullOrEmpty(productID))
+                    {
+                        return productID;
+                    }
+                }
+            }
+
+            return "Unknown Product ID";
+        }
+
+```
+
+Here's how the function works:
+
+1. It defines two constant strings: `keyPath` and `valueName`. `keyPath` represents the registry key path where the product ID is stored, and `valueName` represents the value name of the product ID.
+2. It uses the `Registry.LocalMachine` property to get a reference to the local machine's registry hive.
+3. It calls the `OpenSubKey` method on the `Registry.LocalMachine` object with the `keyPath` to open the corresponding registry key.
+4. It wraps the code block inside a `using` statement to ensure that the `RegistryKey` object is properly disposed of after use.
+5. It checks if the `key` is not null, indicating that the key was successfully opened.
+6. Inside the `if` statement, it retrieves the value associated with `valueName` from the `key` using the `GetValue` method and converts it to a string.
+7. It checks if the `productID` is not null or empty.
+8. If the `productID` is available, it returns the `productID`.
+9. If the registry key or value was not found or if the `productID` is null or empty, it returns the string "Unknown Product ID".
 
 
+<br>
 
 ### Get_OS_Install_Date
+
+The object of this function is to retrieve and return the installation date of the operating system by accessing the Windows Registry. If the installation date cannot be retrieved, it returns a default value of the minimum `DateTime` value formatted as "yyyy-MM-dd"
+
+```c#
+
+public static string Get_OS_Install_Date()
+        {
+            const string keyPath = @"SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+            const string valueName = "InstallDate";
+
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyPath))
+            {
+                if (key != null)
+                {
+                    string installDateValue = key.GetValue(valueName)?.ToString();
+                    if (!string.IsNullOrEmpty(installDateValue) && long.TryParse(installDateValue, out long installDateTicks))
+                    {
+                        return DateTime.FromFileTimeUtc(installDateTicks).ToString("yyyy-MM-dd");
+                    }
+                }
+            }
+
+            return DateTime.MinValue.ToString("yyyy-MM-dd");
+        }
+        
+
+```
+
+
+Here's how the function works:
+
+1. It defines two constant strings: `keyPath` and `valueName`. `keyPath` represents the registry key path where the installation date is stored, and `valueName` represents the value name of the installation date.
+2. It uses the `Registry.LocalMachine` property to get a reference to the local machine's registry hive.
+3. It calls the `OpenSubKey` method on the `Registry.LocalMachine` object with the `keyPath` to open the corresponding registry key.
+4. It wraps the code block inside a `using` statement to ensure that the `RegistryKey` object is properly disposed of after use.
+5. It checks if the `key` is not null, indicating that the key was successfully opened.
+6. Inside the `if` statement, it retrieves the value associated with `valueName` from the `key` using the `GetValue` method and converts it to a string.
+7. It checks if the `installDateValue` is not null or empty, and if it can be parsed as a `long` value using `long.TryParse` method.
+8. If the `installDateValue` is available and successfully parsed, it converts the parsed `installDateTicks` to a `DateTime` object using `DateTime.FromFileTimeUtc` method, and formats it to a string in the format "yyyy-MM-dd".
+9. If the registry key or value was not found, or if the `installDateValue` is null or empty, or if the `installDateValue` could not be parsed as a `long`, it returns the minimum `DateTime` value (DateTime.MinValue) formatted as "yyyy-MM-dd".
+
+
+
+<br>
+
+
+
 
 
