@@ -4,7 +4,7 @@
 
 | Name | Access Modifiers | Objects | Inhert From | Number Of Function |
 | ---- | ---------------- | ------- | ----------- | ------------------ |
-| VirustotalScaner |      Plublic     | myform from Form1 |    none     |        0           |
+| VirustotalScaner |      Plublic     | myform from Form1 |    none     |        5           |
 
 
 ## Help Classes
@@ -24,17 +24,102 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| []() | Static - String | Public | wwwwwwwwwwwwwwww |
-| []() | Static - String | Public | wwwwwwwwwwwwwwww |
-| []() | Static - String | Public | wwwwwwwwwwwwwwww |
-| []() | Static - String | Public | wwwwwwwwwwwwwwww |
-
-	
-
+| [RunScan]() | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
+| [removeHash]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetIpScanResult]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetReultScan]() | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Scanner]() | Static - String | Public | wwwwwwwwwwwwwwww |
 
 
 
+<br>
 
+## RunScan
+
+```c#
+public static void RunScan()
+        {
+            RuningProcessInfo RuningProcessInfo = new RuningProcessInfo();
+
+            ProcessAction.remove_Process();
+            Process[] processes = Process.GetProcesses();
+            foreach (Process process in processes)
+            {
+                try
+                {
+                    myform.processTable1.Rows.Add(process.ProcessName.ToLower(), process.Id, RuningProcessInfo.Parent_process(process.Id), RuningProcessInfo.Process_StartTime(process.Id), RuningProcessInfo.Number_Instances(process.ProcessName), RuningProcessInfo.Process_image_path(process.ProcessName), RuningProcessInfo.P_user_acount(process.ProcessName), RuningProcessInfo.Process_Hash_MD5(RuningProcessInfo.Process_image_path(process.ProcessName)), GetReultScan(RuningProcessInfo.Process_Hash_MD5(RuningProcessInfo.Process_image_path(process.ProcessName)), myform.getapikey()).ToString());
+                    foreach (DataGridViewRow row in myform.processTable1.Rows)
+                    {
+                        if (row.Cells[8].Value.ToString().Contains("Detections") && !(row.Cells[8].Value.ToString().Contains("Detections by : 0")))
+                        {
+                            row.DefaultCellStyle.BackColor = Color.Red;
+                            row.DefaultCellStyle.ForeColor = Color.White;
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
+            MessageBox.Show("Sacn Done Successfully");
+        }
+```
+
+
+
+
+
+
+<br>
+
+## removeHash
+
+```c#
+
+```
+
+
+
+
+
+<br>
+
+## GetIpScanResult
+
+```c#
+
+```
+
+
+
+
+
+
+
+
+<br>
+
+## GetReultScan
+
+```c#
+
+```
+
+
+
+
+
+
+
+
+<br>
+
+## Scanner
+
+```c#
+
+```
 
 
 
