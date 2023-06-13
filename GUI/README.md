@@ -36,12 +36,12 @@ Description : Displays information about machine as Host Name, System, Date, Tim
   - Label : host_name_result.Text = [Dns.GetHostName()](https://learn.microsoft.com/en-us/dotnet/api/system.net.dns.gethostname?view=net-7.0)
   - Label : system_date_result.Text = [DateTime.Now.ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-7.0)
   - Label : time_zone_standerd_result.Text = [TimeZoneInfo.Local.ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.timezoneinfo.tostring?view=net-8.0)
-  - Label : processor_identification_result.Text = [Machine_Information.Get_Processor_Identification()]( )
-  - Label : primary_network_adabter_mac_result.Text = [Machine_Information.Get_Primary_Adapter_Mac()]( )
-  - Label : uptime_result.Text = [Machine_Information.Get_System_Uptime()]( )
-  - Label : installed_ram_result.Text = [Machine_Information.Get_Installed_RAM()]( )
-  - Label : device_id_result.Text = [Machine_Information.Get_Device_ID()]( )
-  - Label : hard_disk_result.Text = [Machine_Information.Get_Disk_Information()]( )
+  - Label : processor_identification_result.Text = [Machine_Information.Get_Processor_Identification()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_processor_identification)
+  - Label : primary_network_adabter_mac_result.Text = [Machine_Information.Get_Primary_Adapter_Mac()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_primary_adapter_mac)
+  - Label : uptime_result.Text = [Machine_Information.Get_System_Uptime()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_system_uptime)
+  - Label : installed_ram_result.Text = [Machine_Information.Get_Installed_RAM()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_installed_ram)
+  - Label : device_id_result.Text = [Machine_Information.Get_Device_ID()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_device_id)
+  - Label : hard_disk_result.Text = [Machine_Information.Get_Disk_Information()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/Machine_Information%20Class#get_disk_information)
 
 
 #### Sub Tab2 Bios Information : bios_information_tab
@@ -49,8 +49,8 @@ Description : Displays information about machine as Host Name, System, Date, Tim
 Description : Displays bios information such as version and type
 
 + Table Layout : bios_information_table
-  - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()]( )
-  - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()]( )
+  - Label : bios_date_result.Text = [BIOS_Information.Get_Bios_Date()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_date)
+  - Label : bios_version_result.Text = [BIOS_Information.Get_Bios_Version()](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_version)
 #### Sub Tab3 OS Information : os_information_tab
 
 Description : Displays information about OS as Operating System, Product Name, Os Build, Install Date
