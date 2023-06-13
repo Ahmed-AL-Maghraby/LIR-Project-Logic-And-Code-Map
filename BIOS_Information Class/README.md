@@ -1,13 +1,13 @@
 
 
 
-| Name | Access Type | Objects | Inherit From | Number Of Function |
+| Name | Access Modifiers | Objects | Inherit From | Number Of Function |
 | ---- | ----------- | ------- | ----------- | ------------------ |
-| ---- | ----------- | ------- | none | 0 |
+| BIOS_Information | Public | none | none | 2 |
 
 ## Methods
 
-| Name | Description |
-| --------------------- | --------------------- |
-| -- | -- |
-
+| Name | Type | Access Modifiers | Description |
+| ---- | ---- | ---------------- | ----------- |
+| Get_Bios_Date | Static - String | Public | wwwwwwwwwwwww|
+| Get_Bios_Version | Static - String | Public | wwwwwwwwwwww |
