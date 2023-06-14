@@ -11,7 +11,7 @@
 
 | Name | Access Modifiers | Number Of Classes |
 | ---------------- | ----------- | ------------------ |
-| [Api GetData Classes](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#api-getdata-classes) |      Plublic    |        4           |
+| [Api GetData Classes](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#api-getdata-classes) |      Plublic    |        4           |
 
 ## Global Varuable
 
@@ -24,11 +24,11 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [RunScan](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#runscan) | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
-| [removeHash](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#removehash) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetIpScanResult](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getipscanresult) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetReultScan](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getreultscan) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Scanner](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#scanner) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [RunScan](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#runscan) | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
+| [removeHash](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#removehash) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetIpScanResult](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getipscanresult) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [GetReultScan](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getreultscan) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [Scanner](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#scanner) | Static - String | Public | wwwwwwwwwwwwwwww |
 
 
 
