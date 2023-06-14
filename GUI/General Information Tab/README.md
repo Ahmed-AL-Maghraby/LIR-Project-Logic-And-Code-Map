@@ -12,7 +12,7 @@ Description : Displays machine, user, capabilities, and network information
 
 | Tab Display Name | Name | Description | 
 | -------------------- | -------------------- | -------------------- |
-| Machine Information | [machine_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#machine-information-tab--machine_information_tab) |   Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information |
+| Machine Information | [machine_information_tab](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#machine-information-tab--machine_information_tab) |   Displays information about machine as Host Name, System, Date, Time Zone, Processor Identification, Network Adapter, Up Time, Ram, Disk, Device ID information |
 | Bios Information | [bios_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#bios-information-tab--bios_information_tab) |   Displays bios information such as version and type |
 | OS Information | [os_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#os-information-tab--os_information_tab) |    Displays information about OS as   Operating System, Product Name, Os Build, Install Date |
 | User Information  | [user_information_tab](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/GUI/General%20Information%20Tab#user-information-tab--user_information_tab) |   Displays information User as Register Owener, Domain, Logged in user |
