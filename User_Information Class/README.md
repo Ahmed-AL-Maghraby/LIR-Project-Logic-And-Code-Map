@@ -16,8 +16,8 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [Get_Registered_Owner](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_owner) | Static - String | Public |  Retrieve the registered owner of the operating system |
-| [Get_Registered_Organization](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_organization) | Static - String | Public |  Retrieve the registered organization of the operating system |
+| [Get_Registered_Owner](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_owner) | Static - String | Public |  Retrieve the registered owner of the operating system |
+| [Get_Registered_Organization](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/tree/main/User_Information%20Class#get_registered_organization) | Static - String | Public |  Retrieve the registered organization of the operating system |
 
 
 	
