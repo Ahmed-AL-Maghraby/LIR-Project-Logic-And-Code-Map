@@ -9,8 +9,8 @@
 
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
-| [Get_Bios_Date](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_date) | Static - String | Public |  Retrieve the BIOS release date of the current system |
-| [Get_Bios_Version](https://github.com/Ahmed-AL-Maghraby/Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_version) | Static - String | Public |  Retrieve the BIOS version of the current system using the Windows Registry. |
+| [Get_Bios_Date](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_date) | Static - String | Public |  Retrieve the BIOS release date of the current system |
+| [Get_Bios_Version](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/tree/main/BIOS_Information%20Class#get_bios_version) | Static - String | Public |  Retrieve the BIOS version of the current system using the Windows Registry. |
 
 <br>
 
