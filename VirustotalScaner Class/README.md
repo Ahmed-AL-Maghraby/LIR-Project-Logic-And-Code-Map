@@ -50,11 +50,14 @@ public static void RunScan()
                     myform.processTable1.Rows.Add(process.ProcessName.ToLower(), process.Id, RuningProcessInfo.Parent_process(process.Id), RuningProcessInfo.Process_StartTime(process.Id), RuningProcessInfo.Number_Instances(process.ProcessName), RuningProcessInfo.Process_image_path(process.ProcessName), RuningProcessInfo.P_user_acount(process.ProcessName), RuningProcessInfo.Process_Hash_MD5(RuningProcessInfo.Process_image_path(process.ProcessName)), GetReultScan(RuningProcessInfo.Process_Hash_MD5(RuningProcessInfo.Process_image_path(process.ProcessName)), myform.getapikey()).ToString());
                     foreach (DataGridViewRow row in myform.processTable1.Rows)
                     {
-                        if (row.Cells[8].Value.ToString().Contains("Detections") && !(row.Cells[8].Value.ToString().Contains("Detections by : 0")))
+
+
+                        if (int.Parse(row.Cells[8].Value.ToString()) > 0)
                         {
                             row.DefaultCellStyle.BackColor = Color.Red;
                             row.DefaultCellStyle.ForeColor = Color.White;
                         }
+
                     }
                 }
                 catch (Exception e)
@@ -64,6 +67,8 @@ public static void RunScan()
             }
             MessageBox.Show("Sacn Done Successfully");
         }
+
+
 ```
 
 
