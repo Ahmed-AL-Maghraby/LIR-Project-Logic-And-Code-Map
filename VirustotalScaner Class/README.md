@@ -37,7 +37,9 @@
 ## RunScan
 
 ```c#
-public static void RunScan()
+
+
+ public static void RunScan()
         {
             RuningProcessInfo RuningProcessInfo = new RuningProcessInfo();
 
@@ -67,8 +69,6 @@ public static void RunScan()
             }
             MessageBox.Show("Sacn Done Successfully");
         }
-
-
 ```
 
 
@@ -114,12 +114,11 @@ public static string GetIpScanResult(string ip)
 ## GetReultScan
 
 ```c#
-
-public static string GetReultScan(string pro_hash, string apik)
+public static int GetReultScan(string pro_hash, string apik)
         {
            
             
-            string result = "";
+            int result = 0;
             if (pro_hash.Length > 10)
             {
                 
@@ -127,19 +126,18 @@ public static string GetReultScan(string pro_hash, string apik)
                 {
                         
                     Scanner(pro_hash, apik);
-                    result = scanresult;
+                    result = int.Parse(scanresult);
                     hashs += pro_hash + result + " ";
                 }
                 else
                 {
-                    result = hashs.Substring(hashs.IndexOf(pro_hash) + 32 ,18);
+                    result = int.Parse(hashs.Substring(hashs.IndexOf(pro_hash) + 32, 2));
                 }
                 
 
             }
             return result;
         }
-
 
 ```
 
@@ -155,7 +153,7 @@ public static string GetReultScan(string pro_hash, string apik)
 ## Scanner
 
 ```c#
-public static void Scanner(string pro_hash, string apik)
+ public static void Scanner(string pro_hash, string apik)
         {
             string apiKey = apik;
             string hashValue = pro_hash;
@@ -173,7 +171,7 @@ public static void Scanner(string pro_hash, string apik)
                     if (data.data != null)
                     {
                         var attributes = data.data.attributes;
-                        scanresult = ($"Detections by : {attributes.last_analysis_stats.malicious}");
+                        scanresult = attributes.last_analysis_stats.malicious.ToString();
 
                     }
                     else
