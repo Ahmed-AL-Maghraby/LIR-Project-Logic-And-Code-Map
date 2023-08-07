@@ -1,7 +1,5 @@
 
 
-
-
 | Name | Access Modifiers | Objects | Inhert From | Number Of Function |
 | ---- | ---------------- | ------- | ----------- | ------------------ |
 | VirustotalScaner |      Plublic     | myform from Form1 |    none     |        5           |
@@ -17,7 +15,7 @@
 
 | Name | Access Modifiers | Type | Description |
 | -- | -- | -- | -- |
-| scanresult | Private |static-string | wwwww |
+| scanresult | Private |static-string | Default value for scanresult = 0 |
 
 ## Methods
 
@@ -25,17 +23,17 @@
 | Name | Type | Access Modifiers | Description |
 | ---- | ---- | ---------------- | ----------- |
 | [RunScan](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#runscan) | Static - String | Public | Run Virustotal Scan And Show Message Box when finish  |
-| [removeHash](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#removehash) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetIpScanResult](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getipscanresult) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [GetReultScan](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getreultscan) | Static - String | Public | wwwwwwwwwwwwwwww |
-| [Scanner](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#scanner) | Static - String | Public | wwwwwwwwwwwwwwww |
+| [removeHash](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#removehash) | Static - String | Public | Remove Hash file |
+| [GetIpScanResult](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getipscanresult) | Static - String | Public | Get the scan result for a given IP address |
+| [GetReultScan](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#getreultscan) | Static - String | Public | Get the scan result for a given file hash |
+| [Scanner](https://github.com/Ahmed-AL-Maghraby/LIR-Project-Logic-And-Code-Map/blob/main/VirustotalScaner%20Class/README.md#scanner) | Static - String | Public | This method performs the actual API call to the VirusTotal service to scan a file based on its hash value |
 
 
 
 <br>
 
 ## RunScan
-
+This method is used to perform a full scan of running processes.
 ```c#
 
 
@@ -71,6 +69,14 @@
         }
 ```
 
+Here's how the function works:
+   - It calls the `RuningProcessInfo` class to get information about running processes.
+   - For each running process, it gathers relevant information (such as process name, ID, start time, etc.), and it also calculates the MD5 hash of the process image file using the `Process_Hash_MD5()` method.
+   - The method then calls the `GetReultScan()` method to get the scan result for the MD5 hash.
+   - It adds the collected information and the scan result to the `myform.processTable1` DataGridView control on the main form.
+   - It also highlights processes with a positive scan result by changing the background color to red and the text color to white.
+   - After processing all running processes, a message box displays "Scan Done Successfully."
+
 
 
 <br>
@@ -93,7 +99,7 @@ public static void removeHash()
 <br>
 
 ## GetIpScanResult
-
+This method is used to get the scan result for a given IP address (not used in the provided code).
 ```c#
 public static string GetIpScanResult(string ip)
         {
@@ -102,6 +108,9 @@ public static string GetIpScanResult(string ip)
         }
 ```
 
+Here's how the function works:
+   - It calls the `Scanner()` method with the IP address and the VirusTotal API key (`myform.vir_api.Text`).
+   - The scan result is stored in the `scanresult` variable, and it is returned as a string.
 
 
 
@@ -112,7 +121,7 @@ public static string GetIpScanResult(string ip)
 <br>
 
 ## GetReultScan
-
+This method is used to get the scan result for a given file hash.
 ```c#
 public static int GetReultScan(string pro_hash, string apik)
         {
@@ -141,6 +150,13 @@ public static int GetReultScan(string pro_hash, string apik)
 
 ```
 
+Here's how the function works:
+   - It takes the file hash (MD5 hash in this case) and the VirusTotal API key as parameters.
+   - The method checks if the file hash is not empty and then checks if it is not already present in the `hashs` variable.
+   - If the hash is not present, it calls the `Scanner()` method with the hash and API key to get the scan result.
+   - It then adds the hash and scan result to the `hashs` variable to avoid redundant scanning in the future.
+   - The scan result is parsed into an integer and returned.
+
 
 
 
@@ -151,7 +167,7 @@ public static int GetReultScan(string pro_hash, string apik)
 <br>
 
 ## Scanner
-
+This method performs the actual API call to the VirusTotal service to scan a file based on its hash value
 ```c#
  public static void Scanner(string pro_hash, string apik)
         {
@@ -187,6 +203,12 @@ public static int GetReultScan(string pro_hash, string apik)
         }
 ```
 
+
+Here's how the function works:
+   - It uses `HttpClient` to send an HTTP GET request to the VirusTotal API endpoint with the given file hash.
+   - The API key is added to the request headers for authentication.
+   - If the response is successful (status code 200), it parses the response content and retrieves the scan result.
+   - The scan result is stored in the `scanresult` variable.
 
 
 
