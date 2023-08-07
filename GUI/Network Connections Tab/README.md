@@ -17,6 +17,9 @@ Description :  Displays information about connections being made and detected in
   + Button : refresh_connection_result
     - Click Event : [ConnectionsAction.remove_connection()]( ) <br>
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [Network_Connections.GetNetworkConnections()]( )
+  + Button : run_anti_scan2
+    - Click Event : [Network_Connections.GetNetworkConnections()]( ) <br>
+     
 
 
 + Data Grid View : Networktable
