@@ -25,15 +25,11 @@ public static Form1 myform = System.Windows.Forms.Application.OpenForms.OfType<F
 | [netstatcommand]() | Void | Private | wwwwwwwwwwwwwwww |
 | [netstat_output]() | Void | Private | wwwwwwwwwwwwwwww |
 | [GetColumnAsArry]() | String[] | Private | wwwwwwwwwwwwwwww |
-| []() | String[] | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-| []() | Static - String | Public | wwwwwwwwwwwwwwww 
-
-
+| [WriteColumnToCSV]() | Void | Private | wwwwwwwwwwwwwwww 
+| [GetprocessName]() | Void | Private | wwwwwwwwwwwwwwww 
+| [LoadCSV]() | DataTable | Public | wwwwwwwwwwwwwwww 
+| [GetHostName]() | Void | Private | wwwwwwwwwwwwwwww 
+| [AbuseIPDBScanAndCountry]() | Void | Private | wwwwwwwwwwwwwwww 
+| [VirusTotalIpScanner]() | Void | Private | wwwwwwwwwwwwwwww 
 
 
