@@ -190,6 +190,29 @@ Here's how the function works:
 ## GetprocessName
 This function retrieves the process names associated with the Process IDs (PIDs) present in the CSV file.
 ```c#
+private void GetprocessName()
+        {
+
+            string[] PidColumn = GetColumnAsArry(6);
+
+            string[] names = new string[PidColumn.Length];
+            for (int i = 0; i < PidColumn.Length; i++)
+            {
+                try
+                {
+                    Process process = Process.GetProcessById(int.Parse(PidColumn[i]));
+                    names[i] = process.ProcessName;
+                }
+                catch (Exception ex)
+                {
+                    names[i] = "error";
+                }
+            }
+
+
+            WriteColumnToCSV(names);
+
+        }
 ```
 Here's how the function works:
    - It first retrieves the Process IDs from the CSV file using `GetColumnAsArry(6)`.
